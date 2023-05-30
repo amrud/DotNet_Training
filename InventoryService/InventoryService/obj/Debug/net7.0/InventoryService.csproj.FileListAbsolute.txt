@@ -1,0 +1,7 @@
+C:\Projects\DotNet_Training\InventoryService\InventoryService\obj\Debug\net7.0\InventoryService.csproj.AssemblyReference.cache
+C:\Projects\DotNet_Training\InventoryService\InventoryService\obj\Debug\net7.0\InventoryService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\DotNet_Training\InventoryService\InventoryService\obj\Debug\net7.0\InventoryService.AssemblyInfoInputs.cache
+C:\Projects\DotNet_Training\InventoryService\InventoryService\obj\Debug\net7.0\InventoryService.AssemblyInfo.cs
+C:\Projects\DotNet_Training\InventoryService\InventoryService\obj\Debug\net7.0\InventoryService.csproj.CoreCompileInputs.cache
+C:\Projects\DotNet_Training\InventoryService\InventoryService\obj\Debug\net7.0\InventoryService.MvcApplicationPartsAssemblyInfo.cs
+C:\Projects\DotNet_Training\InventoryService\InventoryService\obj\Debug\net7.0\InventoryService.MvcApplicationPartsAssemblyInfo.cache
