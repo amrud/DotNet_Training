@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\Downloads\\DotNet_Training\\InventoryService\\InventoryService\\InventoryService.csproj": {}
+    "C:\\Projects\\DotNet_Training\\InventoryService\\InventoryService\\InventoryService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\Downloads\\DotNet_Training\\InventoryService\\InventoryService\\InventoryService.csproj": {
+    "C:\\Projects\\DotNet_Training\\InventoryService\\InventoryService\\InventoryService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Downloads\\DotNet_Training\\InventoryService\\InventoryService\\InventoryService.csproj",
+        "projectUniqueName": "C:\\Projects\\DotNet_Training\\InventoryService\\InventoryService\\InventoryService.csproj",
         "projectName": "InventoryService",
-        "projectPath": "C:\\Users\\Administrator\\Downloads\\DotNet_Training\\InventoryService\\InventoryService\\InventoryService.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Downloads\\DotNet_Training\\InventoryService\\InventoryService\\obj\\",
+        "projectPath": "C:\\Projects\\DotNet_Training\\InventoryService\\InventoryService\\InventoryService.csproj",
+        "packagesPath": "C:\\Users\\amranmo1\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\DotNet_Training\\InventoryService\\InventoryService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amranmo1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,8 +26,10 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://ubit-artifactory-or.intel.com/artifactory/api/nuget/v3/tdata-middleware-or-local": {}
         },
         "frameworks": {
           "net7.0": {

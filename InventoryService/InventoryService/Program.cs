@@ -1,22 +1,34 @@
 using InventoryService.Configurations;
+using InventoryService.Contexts;
 using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
+ConfigurationManager configuration = builder.Configuration;
 
 // Add services to the container.
-//builder.Configuration.AddConfigServer();
-ConfigurationManager configuration = builder.Configuration;
-var data = new VaultConfiguration(configuration).GetConfigurations().Result;
-
-Console.WriteLine(data);
+Dictionary<string, Object> data = new VaultConfiguration(configuration).GetConfigurations().Result;
+//connection string
 SqlConnectionStringBuilder providerCs = new SqlConnectionStringBuilder();
+//reading from Vault server
 providerCs.InitialCatalog = data["dbname3"].ToString();
 providerCs.UserID = data["username"].ToString();
 providerCs.Password = data["password"].ToString();
-string machineName = data["machineName"].ToString();
-string serverName = data["serverName"].ToString();
-providerCs.DataSource = $"{machineName}\\{serverName}";//data[""].ToString();
-//
+//providerCs.DataSource = "DESKTOP-55AGI0I\\MSSQLEXPRESS2022";
+var machineName = data["machinename"];
+var serverName = data["servername"];
+var datasource = machineName + "\\" + serverName;
+providerCs.DataSource = datasource;
+//reading via config server
+//providerCs.DataSource = configuration["servername"];
+
+//providerCs.UserID = CryptoService2.Decrypt(ConfigurationManager.
+//AppSettings["UserId"]);
+providerCs.MultipleActiveResultSets = true;
+providerCs.TrustServerCertificate = false;
+builder.Services.AddDbContext<InventoryContext>(o =>
+o.UseSqlServer(providerCs.ToString()));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
